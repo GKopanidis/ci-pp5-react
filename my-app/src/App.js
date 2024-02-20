@@ -1,10 +1,13 @@
-import "./App.css";
-import StatefulGreetingWithPrevState from "./components/StatefulGreetingWithPrevState";
+import css from "./App.module.css";
+import NavBarSimple from "./components/NavBarSimple";
+import Sidebar from "./components/Sidebar";
 
 function App() {
   return (
-    <div className="App">
-      <StatefulGreetingWithPrevState />
+    <div className={css.App}>
+      {/* Add your components here */}
+      <NavBarSimple />
+      <Sidebar />
     </div>
   );
 }
