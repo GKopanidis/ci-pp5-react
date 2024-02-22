@@ -27,13 +27,26 @@
 
 // export default App;
 
+// import "./App.css";
+// import EventBinding from "./components/EventBinding";
+
+// function App() {
+//   return <div className="App">
+//       <EventBinding />
+//   </div>;
+// }
+
+// export default App;
+
 import "./App.css";
-import EventBinding from "./components/EventBinding";
+import ConditionalRenderingClass from "./components/ConditionalRenderingClass";
+import ConditionalRenderingFunctional from "./components/ConditionalRenderingFunctional";
 
 function App() {
-  return <div className="App">
-      <EventBinding />
-  </div>;
+  return (<div className="App">
+      <ConditionalRenderingClass />
+      <ConditionalRenderingFunctional connected={false} />
+  </div>);
 }
 
 export default App;
