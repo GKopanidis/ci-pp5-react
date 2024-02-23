@@ -6,6 +6,7 @@ import PostItem from "./PostItem";
 const { savedPosts } = postsData;
 
 export class Content extends Component {
+    // eslint-disable-next-line
     constructor(props) {
         super(props);
     }
