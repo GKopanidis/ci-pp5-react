@@ -1,10 +1,8 @@
 import React, {useState, useEffect} from "react";
 import css from "./css/Content.module.css";
-import postsData from "../posts.json";
+import {savedPosts} from "../posts.json";
 import PostItem from "./PostItem";
 import Loader from "./Loader";
-
-const { savedPosts } = postsData;
 
 function ContentHooks() {
     const [isLoaded, setIsLoaded] = useState(false);
